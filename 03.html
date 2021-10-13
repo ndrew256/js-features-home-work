@@ -1,0 +1,8 @@
+<!doctype html>
+<script>
+  async function loadModule() {
+    let sayHi = await import('./03-module.js');
+    sayHi.helloWorld();
+  }
+</script>
+<button onclick="loadModule()">Load alert!</button>
